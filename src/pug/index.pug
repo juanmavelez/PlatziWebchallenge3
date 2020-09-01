@@ -1,0 +1,12 @@
+include ./components/boxes.pug
+include globals.pug
+html
+    header.header
+        h2.header__title--h2 Reliable, efficient delivery
+        h1.header__title--h1 Powered by Technology
+        p.header__content Our Artificial  Intelligence powered tools use millions of project data points to ensure that your project is successful     delivery
+    main
+        ul
+            each val, index in BOX_NAME
+                li
+                    +box(BOX_NAME[index], TEXT[index], IMAGE_ROUTE[index], ALT_TEXT[index])

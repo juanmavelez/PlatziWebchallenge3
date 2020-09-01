@@ -1,0 +1,6 @@
+mixin box (title, text, image, altimage )
+    .box
+        h1.box__titulo  #{title}
+        p.box__content  #{text}
+        figure.box__image
+            img(src= image, alt= altimage)
