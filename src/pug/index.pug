@@ -1,12 +1,19 @@
 include ./components/boxes.pug
 include globals.pug
-html
-    header.header
-        h2.header__title--h2 Reliable, efficient delivery
-        h1.header__title--h1 Powered by Technology
-        p.header__content Our Artificial  Intelligence powered tools use millions of project data points to ensure that your project is successful     delivery
-    main
-        ul
-            each val, index in BOX_NAME
-                li
-                    +box(BOX_NAME[index], TEXT[index], IMAGE_ROUTE[index], ALT_TEXT[index])
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title Frontend Mentor | Four card feature section
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet", href="../sass/index.css")
+    body
+        header.header
+            h2.header__title--h2 Reliable, efficient delivery
+            h1.header__title--h1 Powered by Technology
+            p.header__content Our Artificial  Intelligence powered tools use millions of project data points to ensure that your project is successful     delivery
+        main.main
+            ul.main__list
+                each val, index in BOX_NAME
+                    li
+                        +box(BOX_NAME[index], TEXT[index], IMAGE_ROUTE[index], ALT_TEXT[index])

@@ -1,0 +1,44 @@
+
+$PRIMARY_COLOR1:hsl(180, 62%, 55%);
+$PRIMARY_COLOR2: hsl(0, 78%, 62%);
+$PRIMARY_COLOR3: hsl(34, 97%, 64%);
+$PRIMARY_COLOR4: hsl(212, 86%, 64%);
+
+$SECUNDARY_COLOR1:hsl(234, 12%, 34%);
+$SECUNDARY_COLOR2:hsl(229, 6%, 66%);
+$SECUNDARY_COLOR3:hsl(0, 0%, 98%);
+$SECUNDARY_COLOR4:white;
+
+html{
+    font-size :62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,
+ul,ol,
+p,figure,header{
+    margin-bottom:1.5rem;
+}
+
+ul,li{
+    list-style-type:none;
+    padding: 0;
+}
+
+p{
+    color:$SECUNDARY_COLOR2;
+    font-weight: 200;
+}
+
+h2{
+    color:$SECUNDARY_COLOR1;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 600;
+}
+
+
+
+
