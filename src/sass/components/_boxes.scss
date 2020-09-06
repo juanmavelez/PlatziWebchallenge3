@@ -1,11 +1,10 @@
-
 @mixin boxes($color, $backgroundColor, $boxShadow){
 	.box{
 		background-color: $backgroundColor;
 		border-top: $color 0.4rem solid;
 		box-shadow: $boxShadow;
 		width: 100%;
-		padding:2rem 4rem;
+		padding:1rem 2rem;
 		@extend %radius;
 		&__image{
 			display:flex;
