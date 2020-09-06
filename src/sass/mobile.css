@@ -45,7 +45,7 @@ li:nth-of-type(4) .box, li:nth-of-type(3) .box, li:nth-of-type(2) .box, li:nth-o
   border-radius: 1rem;
 }
 
-.main__list li, .main__list {
+.main__list {
   margin: 0 auto;
 }
 
@@ -59,10 +59,10 @@ li:nth-of-type(4) .box, li:nth-of-type(3) .box, li:nth-of-type(2) .box, li:nth-o
   display: grid;
   max-width: 95%;
   grid-template-areas: "li1" "li2" "li3" "li4";
-  gap: 2rem;
+  gap: 3rem;
 }
 .main__list li {
-  width: 85%;
+  width: 100%;
 }
 
 li:nth-of-type(1) {
