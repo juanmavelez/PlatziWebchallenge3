@@ -1,46 +1,8 @@
-@import "./globals.scss";
-@import "./functions.scss";
+@import "./components/globals.scss";
+@import "./components/functions.scss";
 @import "./components/boxes.scss";
 
-body{
-    background-color:$SECUNDARY_COLOR3;
-    @extend %center;
-    display:block;
-}
 
-.header{
-    text-align: center;
-}
+@import "./components/header.scss";
+@import "./components/articulos.scss"
 
-.main__list{
-    margin: 0 auto;
-    width: 85%;
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: "li1"
-                         "li2"
-                         "li3"
-                         "li4";
-    li{
-        margin: 0 auto;
-    }
-}
-
-
-
-li:nth-of-type(1){
-    grid-area: li1;
-    @include boxes($PRIMARY_COLOR1,$SECUNDARY_COLOR4);
-}
-li:nth-of-type(2){
-    grid-area: li2;
-    @include boxes($PRIMARY_COLOR2,$SECUNDARY_COLOR4);
-}
-li:nth-of-type(3){
-    grid-area: li3;
-    @include boxes($PRIMARY_COLOR3,$SECUNDARY_COLOR4);
-}
-li:nth-of-type(4){
-    grid-area: li4;
-    @include boxes($PRIMARY_COLOR4,$SECUNDARY_COLOR4);
-}

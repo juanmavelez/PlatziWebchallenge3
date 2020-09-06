@@ -9,15 +9,27 @@ $SECUNDARY_COLOR2:hsl(229, 6%, 66%);
 $SECUNDARY_COLOR3:hsl(0, 0%, 98%);
 $SECUNDARY_COLOR4:white;
 
+$BOX_WIDHT: 85vw;
+$BOX_SHADOW: 0px 1px 20px 0px $SECUNDARY_COLOR2;
+$FONT_FAMILY: 'Poppins', sans-serif;
+
 html{
     font-size :62.5%;
-    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:$SECUNDARY_COLOR3;
+    font-family: $FONT_FAMILY;
+    font-size: 1.5rem;
+    @extend %center;
+    display:block;
 }
 
 h1,h2,
 ul,ol,
 p,figure,header{
     margin-bottom:1.5rem;
+    margin-top:1.5rem;
 }
 
 ul,li{
@@ -36,6 +48,7 @@ h2{
 }
 
 h1{
+    font-size: 3rem;
     font-weight: 600;
 }
 

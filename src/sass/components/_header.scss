@@ -1,0 +1,5 @@
+.header{
+    width: $BOX_WIDHT;
+    text-align: center;
+    @extend %marginAuto;
+}

@@ -1,12 +1,19 @@
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: #fafafa;
   font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  display: block;
 }
 
 h1, h2,
 ul, ol,
 p, figure, header {
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 ul, li {
@@ -25,11 +32,11 @@ h2 {
 }
 
 h1 {
+  font-size: 3rem;
   font-weight: 600;
 }
 
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -38,34 +45,26 @@ li:nth-of-type(4) .box, li:nth-of-type(3) .box, li:nth-of-type(2) .box, li:nth-o
   border-radius: 1rem;
 }
 
-body {
-  background-color: #fafafa;
-  display: block;
+.main__list li, .main__list, .header {
+  margin: 0 auto;
 }
 
 .header {
+  width: 85vw;
   text-align: center;
 }
 
 .main__list {
-  margin: 0 auto;
-  width: 85%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "li1" "li2" "li3" "li4";
-}
-.main__list li {
-  margin: 0 auto;
-}
-
-li:nth-of-type(1) {
-  grid-area: li1;
+  gap: 2rem;
 }
 li:nth-of-type(1) .box {
   background-color: white;
-  width: 100%;
-  display: grid;
   border-top: #45d3d3 0.4rem solid;
+  box-shadow: 0px 1px 20px 0px #a3a5ae;
+  width: 85vw;
+  padding: 2rem 4rem;
 }
 li:nth-of-type(1) .box__image {
   display: flex;
@@ -77,9 +76,10 @@ li:nth-of-type(2) {
 }
 li:nth-of-type(2) .box {
   background-color: white;
-  width: 100%;
-  display: grid;
   border-top: #ea5353 0.4rem solid;
+  box-shadow: 0px 1px 20px 0px #a3a5ae;
+  width: 85vw;
+  padding: 2rem 4rem;
 }
 li:nth-of-type(2) .box__image {
   display: flex;
@@ -91,9 +91,10 @@ li:nth-of-type(3) {
 }
 li:nth-of-type(3) .box {
   background-color: white;
-  width: 100%;
-  display: grid;
   border-top: #fcaf4a 0.4rem solid;
+  box-shadow: 0px 1px 20px 0px #a3a5ae;
+  width: 85vw;
+  padding: 2rem 4rem;
 }
 li:nth-of-type(3) .box__image {
   display: flex;
@@ -105,9 +106,10 @@ li:nth-of-type(4) {
 }
 li:nth-of-type(4) .box {
   background-color: white;
-  width: 100%;
-  display: grid;
   border-top: #549ef2 0.4rem solid;
+  box-shadow: 0px 1px 20px 0px #a3a5ae;
+  width: 85vw;
+  padding: 2rem 4rem;
 }
 li:nth-of-type(4) .box__image {
   display: flex;
