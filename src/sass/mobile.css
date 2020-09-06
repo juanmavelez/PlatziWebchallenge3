@@ -45,25 +45,34 @@ li:nth-of-type(4) .box, li:nth-of-type(3) .box, li:nth-of-type(2) .box, li:nth-o
   border-radius: 1rem;
 }
 
-.main__list li, .main__list, .header {
+.main__list li, .main__list {
   margin: 0 auto;
 }
 
 .header {
   width: 85vw;
   text-align: center;
+  margin: 3 auto;
 }
 
 .main__list {
   display: grid;
+  max-width: 95%;
   grid-template-areas: "li1" "li2" "li3" "li4";
   gap: 2rem;
+}
+.main__list li {
+  width: 85%;
+}
+
+li:nth-of-type(1) {
+  grid-area: li1;
 }
 li:nth-of-type(1) .box {
   background-color: white;
   border-top: #45d3d3 0.4rem solid;
   box-shadow: 0px 1px 20px 0px #a3a5ae;
-  width: 85vw;
+  width: 100%;
   padding: 2rem 4rem;
 }
 li:nth-of-type(1) .box__image {
@@ -78,7 +87,7 @@ li:nth-of-type(2) .box {
   background-color: white;
   border-top: #ea5353 0.4rem solid;
   box-shadow: 0px 1px 20px 0px #a3a5ae;
-  width: 85vw;
+  width: 100%;
   padding: 2rem 4rem;
 }
 li:nth-of-type(2) .box__image {
@@ -93,7 +102,7 @@ li:nth-of-type(3) .box {
   background-color: white;
   border-top: #fcaf4a 0.4rem solid;
   box-shadow: 0px 1px 20px 0px #a3a5ae;
-  width: 85vw;
+  width: 100%;
   padding: 2rem 4rem;
 }
 li:nth-of-type(3) .box__image {
@@ -108,7 +117,7 @@ li:nth-of-type(4) .box {
   background-color: white;
   border-top: #549ef2 0.4rem solid;
   box-shadow: 0px 1px 20px 0px #a3a5ae;
-  width: 85vw;
+  width: 100%;
   padding: 2rem 4rem;
 }
 li:nth-of-type(4) .box__image {
@@ -116,4 +125,4 @@ li:nth-of-type(4) .box__image {
   justify-content: flex-end;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=mobile.css.map */

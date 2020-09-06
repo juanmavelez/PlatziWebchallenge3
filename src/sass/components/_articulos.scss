@@ -1,6 +1,7 @@
 .main__list{
     @extend %marginAuto;
     display:grid;
+    max-width: 95%;
     grid-template-areas: "li1"
                          "li2"
                          "li3"
@@ -8,23 +9,22 @@
     gap: 2rem;
     li{
         @extend %marginAuto;
+        width: 85%;
     }
 }
-
-
-
 li:nth-of-type(1){
-    @include boxes($PRIMARY_COLOR1,$SECUNDARY_COLOR4,$BOX_WIDHT,$BOX_SHADOW);
+    grid-area: li1;
+    @include boxes($PRIMARY_COLOR1,$SECUNDARY_COLOR4,$BOX_SHADOW);
 }
 li:nth-of-type(2){
     grid-area: li2;
-    @include boxes($PRIMARY_COLOR2,$SECUNDARY_COLOR4,$BOX_WIDHT,$BOX_SHADOW);
+    @include boxes($PRIMARY_COLOR2,$SECUNDARY_COLOR4,$BOX_SHADOW);
 }
 li:nth-of-type(3){
     grid-area: li3;
-    @include boxes($PRIMARY_COLOR3,$SECUNDARY_COLOR4,$BOX_WIDHT,$BOX_SHADOW);
+    @include boxes($PRIMARY_COLOR3,$SECUNDARY_COLOR4,$BOX_SHADOW);
 }
 li:nth-of-type(4){
     grid-area: li4;
-    @include boxes($PRIMARY_COLOR4,$SECUNDARY_COLOR4, $BOX_WIDHT,$BOX_SHADOW);
+    @include boxes($PRIMARY_COLOR4,$SECUNDARY_COLOR4,$BOX_SHADOW);
 }
